@@ -20,7 +20,7 @@ public class TestFlink {
 		watch.start("构造");
 		List<StudentEntity> list =new ArrayList<StudentEntity>(10000);
 		for(int i=0;i<10000;i++) {
-			list.add(init(i+60000));
+			list.add(init(i+210000));
 		}
 		watch.stop();
 	 

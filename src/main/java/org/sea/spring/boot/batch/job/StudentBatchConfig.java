@@ -105,7 +105,7 @@ public class StudentBatchConfig {
         jobRepositoryFactoryBean.setTransactionManager(transactionManager);
         jobRepositoryFactoryBean.setDatabaseType(String.valueOf(DatabaseType.MYSQL));
         // 下面事务隔离级别的配置是针对Oracle的
-        jobRepositoryFactoryBean.setIsolationLevelForCreate("ISOLATION_READ_COMMITTED");
+//        jobRepositoryFactoryBean.setIsolationLevelForCreate(isolationLevelForCreate);
         jobRepositoryFactoryBean.afterPropertiesSet();
         return jobRepositoryFactoryBean.getObject();
     }
